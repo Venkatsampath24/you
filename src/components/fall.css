@@ -1,0 +1,11 @@
+@keyframes fall {
+    0% {
+      transform: translateY(0); /* Start from the top */
+      opacity: 1; /* Fully visible at the start */
+    }
+    100% {
+      transform: translateY(100vh); /* Fall to the bottom of the screen */
+      opacity: 0; /* Fade out as it falls */
+    }
+  }
+  
