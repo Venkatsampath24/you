@@ -1,8 +1,29 @@
-@keyframes fall {
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.animate-blink {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes floating {
   0% {
-    transform: translateY(-100%);
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
   }
   100% {
-    transform: translateY(100vh); /* Fall to the bottom of the screen */
+    transform: translateY(0);
   }
+}
+
+.animate-floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+.float {
+  animation: floating 3s ease-in-out infinite;
 }
